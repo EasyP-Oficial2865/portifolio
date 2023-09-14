@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <title>Portfolio Web</title>
+    <!-- my styles -->
+    <link rel="stylesheet" href="src/styles.css">
+    
+    <!-- icons - Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="title"><a href="#home">FF</a></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contatcs</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="showMenu()">
+            <button class="btn menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <div class="dropdown show">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#learning">Learning</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contatcs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="theme-button">
+            <button class="btn active" type="button"><i class='bx bxs-sun'></i></button>
+            <button class="btn" type="button"><i class='bx bxs-moon' ></i></button>
+        </div>
+    </header>
+    <main>
+
+        <section id="home">
+            <div class="left">
+                <h2>Hey,</h2>
+                <h1><span>Sou </span>Franciele</h1>
+                <div>
+                    Desenvolvedora Web
+                </div>
+            </div>
+            <div class="right">
+                <h2>
+                    function <span>iAmDev()</span>{
+                        <p>return(</p>
+                        <img src="../src/img/vetor.svg" alt="">
+                        <p>);</p>
+                    }
+                </h2>
+            </div>
+            <div class="bottom"></div>
+        </section>
+        <section id="about">
+            about
+        </section>
+        <section id="learning">
+            <h2>Learnings</h2>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            projects
+        </section>
+        <section id="contacts">
+            contacts
+        </section>
+    </main>
+    
+    <!-- my scripts js -->
+    <link rel="stylesheet" href="src/scripts.js">
+    <script>
+        
+        function showMenu(){
+            dropdown = document.querySelector('.dropdown').classList;
+            if(dropdown == 'show'){
+                document.querySelector('.dropdown').classList.add('show');
+            }else{
+                
+                document.querySelector('.dropdown').classList.remove('show');
+            }
+            console.log(dropdown)
+        }
+    </script>
+</body>
+</html>
